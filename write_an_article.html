@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>悦读-写文章</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            width:100%;
+            height:100%;
+        }
+        body{postion：absolute；left:0;right:0;bottom:0;top:0;}
+        header{
+            background-color: #7F4A88;
+            opacity: 1;
+            box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.20);
+        }
+    </style>
+</head>
+<body>
+    <header>
+                <span>APIS</span>
+                <span></span>
+                <span>悦读项目</span>
+                <div class="personal" style="display: inline-block;
+                float:right;">
+                    <img src="images/list/userimg.png" alt="" class="user-images">
+                    <span class="name">吕璐</span>
+                    <a href=""  onclick="changeImage()" class="drop-down"><img src="images/list/icon_arrow_down.png" alt="" ></a>
+                    <a href="">
+                            <img src="images/xie/icon_publish.png" alt="" class="record">
+                    </a>
+                    <span>
+                        <a href="">发布</a>
+                    </span>
+                </div>
+                <!-- <ul class="eject">
+                    <li>
+                        <a href="">
+                            <img src="images/list/icon_user.png" alt="">
+                            <span>个人中心</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/list/icon_setting.png" alt="">
+                            <span>账户设置</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/list/icon_exit.png" alt="">
+                            <span>退出登陆</span>
+                        </a>
+                    </li>
+                </ul> -->
+    </header>
+    <div class="write_article">
+        <div class="write_article_images">
+                <p>更换图片</p>
+                <input type="file">
+        </div>
+        <div class="input_information">
+            <input type="text" placeholder="请输入标题">
+            <hr>
+            <textarea placeholder="请输入正文"></textarea>
+        </div>
+    </div>
+</body>
+</html>
