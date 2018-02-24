@@ -1,0 +1,1267 @@
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+img,div,th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+input{
+    resize:none;
+    outline:none;
+}
+button{
+    margin: 0;
+}
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 14px/1.5 tahoma, \5b8b\4f53, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读, 让 small 正常化 */
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+sup { vertical-align: text-top; } /* 重置, 减少对行高的影响 */
+sub { vertical-align: text-bottom; }
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+/* 重置 HTML5 元素 */
+article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+mark { background: #ff0; }
+.fl{
+    float: left;
+}
+header{
+    width: 100%;
+    height:60px;
+    background: rgba(127,74,136,.3);
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2);
+}
+header>span,img{
+    position: absolute;
+    display: inline-block;
+}
+header>span:first-child{
+    top:10px;
+    left:39px;
+    width:78px;
+    height:26px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+header>span:nth-child(2){
+    width:2px;
+    height:24px;
+    background-color: #FFFFFF;
+    top: 19px;
+    left:135px;
+}
+header>span:nth-child(3){
+    width:109px;
+    height:33px;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 33px;
+    left:150px;
+    top: 14px;
+}
+a,a:hover{text-decoration:none} 
+/* 注册 */
+.center-line-register{
+    width:567px;
+    height:510px;
+    margin: 0 auto;
+    margin-top: 165px;
+    border-radius: 15px;
+    background: rgba(255,255,255,.1);
+}
+.center-line-register li{
+    width:46px;
+    text-align: center;
+    color: #fff;
+    height:30px;
+    margin-top: 53px;
+    display: inline-block;
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.center-line-register li:first-child{
+    margin-left: 206px;
+    margin-right: 66px;
+}
+.center-line-register li.fc{
+    color: #7F4A88;
+}
+.line{
+    width:90px;
+    height:3px;
+    background: #7F4A88;
+    margin-left: 296px;
+    margin-top: 8px;
+}
+.center-line-register input{
+    width:410px;
+    height:42px;
+    border: 1px solid #7F4A88;
+    border-radius: 5px;
+    margin-left: 77px;
+    margin-bottom: 17px;
+    background-color: transparent;
+    opacity: 0.8;
+    font-family: ArialMT;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    padding-left: 13px;
+}
+.center-line-register input::-webkit-input-placeholder { 
+    color: #FFFFFF;
+}
+.center-line-register input:first-child{
+    margin-top: 38px;
+}
+.center-line-register #verification_code{
+    width:289px;
+}
+.center-line-register .register2{
+    display: none;
+}
+.center-line-register #get_code{
+    margin-left: 18px;
+    width: 103px;
+    height:42px;
+    background: #7F4A88;
+    border-radius: 3px;
+    border: none;
+    font-family: ArialMT;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+#register1{
+    width:410px;
+    height:42px;
+    background: #7F4A88;
+    border-radius: 5px;
+    margin-left: 77px;
+    border: none;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-bottom: 21px;
+}
+#register2{
+    width:410px;
+    height:42px;
+    background: #7F4A88;
+    border-radius: 5px;
+    margin-left: 77px;
+    border: none;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-bottom: 21px;
+}
+.center-line-register .denglu{
+    text-align: center;
+}
+.center-line-register div:last-child>a{
+    color: #FFFFFF;
+}
+/* 找回密码 */
+.center-line-back{
+    width:567px;
+    height:445px;
+    margin: 0 auto;
+    margin-top: 165px;
+    border-radius: 15px;
+    background: rgba(255,255,255,.1);
+}
+.center-line-back .back_pwd{
+    width:94px;
+    height:30px;
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding-top: 44px;
+    margin-left: 237px;
+}
+.center-line-back #phone_number{
+    margin-top: 34px;
+}
+.center-line-back input{
+    width:410px;
+    height:42px;
+    border: 1px solid #7F4A88;
+    border-radius: 5px;
+    margin-left: 77px;
+    margin-bottom: 17px;
+    background-color: transparent;
+    opacity: 0.8;
+    font-family: ArialMT;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    padding-left:13px;
+    box-sizing: border-box
+}
+ .center-line-back input::-webkit-input-placeholder { 
+    color: #FFFFFF;
+}
+.center-line-back #verification_code{
+    width:289px;
+}
+.center-line-back #get_code{
+    margin-left: 20px;
+    width: 103px;
+    height:42px;
+    background: #7F4A88;
+    border-radius: 3px;
+    border: none;
+    font-family: ArialMT;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.center-line-back #confirm{
+    width:410px;
+    height:42px;
+    background: rgba(255,255,255,0.35);
+    border-radius: 5px;
+    margin-left: 77px;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-family: ArialMT;
+    font-size: 18px;
+}
+/* 修改密码 */
+.modify-text{
+    margin: 0 auto;
+    width:671px;
+    margin-top: 60px;
+}
+.modify-text span:first-child{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #222629;
+    letter-spacing: 0;
+}
+.modify-text span:last-child{
+    margin-left: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+}
+.modify-line{
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom:28px; 
+    width:671px;
+    height:1px;
+    opacity: 0.7;
+    background-color: #7F4A88;
+}
+.center-line-modify{
+    margin-top: 28px;
+    width:567px;
+    height:440px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 1px solid #F2EEF3;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.05);
+    border-radius: 15px;
+}
+.center-line-modify .back_pwd{
+    width:94px;
+    height:30px;
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: #7F4A88;
+    letter-spacing: 0;
+    padding-top: 44px;
+    margin-left: 237px;
+}
+.center-line-modify #phone_number{
+    margin-top: 34px;
+}
+.center-line-modify input{
+    width:410px;
+    height:42px;
+    border-radius: 5px;
+    margin-left: 77px;
+    margin-bottom: 17px;
+    background-color: transparent;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #222629;
+    padding-left:13px;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(0,0,0,0.1);
+}
+ .center-line-modify input::-webkit-input-placeholder { 
+    opacity: 0.8;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+}
+.center-line-modify #verification_code{
+    width:289px;
+}
+.center-line-modify #get_code{
+    margin-left: 18px;
+    width: 103px;
+    height:42px;
+    background: #7F4A88;
+    border-radius: 3px;
+    border: none;
+    font-family: ArialMT;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.center-line-modify #confirm{
+    width:410px;
+    height:42px;
+    background: rgba(34,38,41,.7);
+    border-radius: 5px;
+    margin-left: 77px;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+}
+/* 文章列表 */
+header .personal{
+    display: inline-block;
+    float: right;
+    height:60px;
+}
+header .personal>span,img,a{
+    display: inline-block;
+    position: relative
+}
+header .personal>span:last-child>a{
+    top:-3px;
+    right:39px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    width:50px;
+    height:22px;
+    cursor: pointer;
+}
+header .personal .record{
+    width:19px;
+    height:19px;
+    right:46px;
+    top:1px;
+}
+header .personal .write{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    top:16px;
+    right: 39px;
+}
+header .personal .user-images{
+    width:35px;
+    height:35px;
+    top:12px;
+    right:140px;
+    border-radius: 50%;
+}
+header .personal .drop-down{
+    width:13px;
+    height:13px;
+    right:100px;
+}
+header .personal .drop-down>img{
+    width:13px;
+    height:13px;
+}
+header .personal .name{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    right:120px;
+}
+header .eject{
+    width:109px;
+    height:124.7px;
+    background: #FFFFFF;
+    border: 1px solid #F2EEF3;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.10);
+    border-top:5px solid transparent;
+    position: absolute;
+    right:141px;
+    top:50px;
+    display: none;
+    z-index: 99;
+}
+header .eject img{
+    width:15px;
+    height:15px;
+    margin-left: 18px;
+    position: absolute;
+    top:2px;
+}
+header .eject span{
+    width:53px;
+    height:13px;
+    margin-left: 6px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #222629;
+    letter-spacing: 0;
+    position: absolute;
+    left:35px;
+}
+header .eject li{
+    margin-bottom: 17px;
+}
+#main{
+    margin-top: 45px;
+}
+#main .main{
+    width:998px;
+    height:241px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 1px solid #F0E9F1;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
+    border-radius: 2px; 
+    margin-bottom: 20px;
+}
+#main .main>.img{
+    width:396px;
+    height:241px;
+    display: inline-block;
+    float: left;
+}
+#main .main>.img>img{
+    width:396px;
+    height:241px;
+}
+#main .main>.container{
+    width:602px;
+    height:241px;
+    display: inline-block;
+    float: right;
+}
+#main .main>.container>.title{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-top: 35px;
+    margin-bottom: 14px;
+    margin-left: 36px;
+}
+#main .main>.container>.container-text{
+    width:527px;
+    height:72px;
+    margin-left: 36px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+#main .main>.container>.time-user{
+    margin-left: 36px;
+    line-height: 36px;
+}
+#main .main>.container>.time-user>a>.userimages{
+    width:36px;
+    height:36px;
+    border-radius: 50%;
+    margin-right: 11px;
+    float: left
+}
+#main .main>.container>.time-user>a>.username{
+    display: inline-block;
+    width: 100px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-right: 31px;
+}
+#main .main>.container>.time-user>.usertime{
+    width:40px;
+    height:20px;
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+}
+#main .main>.container>.time-user>.support{
+    display: inline-block;
+    float: right;
+    margin-right: 39px;
+}
+#main .main>.container>.time-user>.support>span{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #7F4A88;
+    letter-spacing: 0;
+    margin-left: 11px;
+}
+#main .main>.container>.time-user>.support>img{
+    margin-left: 35px;
+}
+.loading{
+    margin-top: 31px;
+    text-align: center;
+}
+.loading>img{
+    width:30px;
+    height:30px;
+    vertical-align:middle
+}
+.loading>span{
+    opacity: 0.4;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-left: 10px;
+}
+.fixed-slide{
+    position: fixed;
+    right:136px;
+    bottom:155px;
+}
+/* 文章详情 */
+.personal span>a{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.personal .register{
+    position: absolute;
+    right:144px;
+    top:21px;
+}
+.personal .land{
+    position: absolute;
+    right:198px;
+    top:21px;
+}
+.main-details{
+    width:906px;
+    margin: 0 auto;
+}
+.main-details .main-details-title{
+    margin-top: 67px;
+}
+.main-details .main-details-title>span:first-child{
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-right: 58px;
+}
+.main-details .main-details-title>span:last-child{
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #7F4A88;
+    letter-spacing: 0;
+    line-height: 14px;
+    margin-left: 9.5px;
+}
+.main-details .time-user{
+    line-height: 36px;
+    margin-top: 24px;
+}
+.main-details .time-user>.userimages{
+    width:36px;
+    height:36px;
+    margin-right: 11px;
+    float: left
+}
+.main-details .time-user>.username{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-right: 31px;
+}
+.main-details .time-user>.usertime{
+    width:40px;
+    height:20px;
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+}
+.main-details .time-user span{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #7F4A88;
+    letter-spacing: 0;
+    margin-left: 11px;
+}
+.main-details .time-user .support-img{
+    margin-left: 35px;
+}
+.main-details .detailes-img{
+    width:906px;
+    height:375px;
+    margin-top: 17px;
+}
+.main-details .detailes-img img{
+    width:906px;
+    height:375px;
+}
+.main-details .detailes-container{
+    margin-top: 40px;
+}
+.main-details .detailes-container p{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.main-details hr{
+    opacity: 0.5;
+    color: #7F4A88;
+    margin-bottom: 31px;
+    margin-top: 28px;
+}
+.main-details .comment .comment-title{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-bottom: 28px;
+}
+.main-details .comment .comment-container{
+    width:907px;
+    height:103px;
+    background-color: rgba(127,74,136,0.2);
+    border-radius: 5px;
+    padding:13px;
+    margin-bottom: 22px;
+    resize:none;
+    outline:none;
+}
+.main-details .comment textarea ::-webkit-textarea-placeholder{
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+}
+.main-details .comment .submit-container{
+    width:88px;
+    height:36px;
+    background: #7F4A88;
+    border-radius: 4px;
+    border:none;
+    float:right;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 14px;
+    margin-bottom: 16px;
+}
+.clear{
+    clear: both;
+}
+
+.recent-comments .time-user{
+    line-height: 36px;
+    margin-top: 24px;
+}
+.recent-comments .time-user>.userimages{
+    width:36px;
+    height:36px;
+    margin-right: 11px;
+    float: left
+}
+.recent-comments .time-user>.username{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-right: 31px;
+}
+.recent-comments .time-user>.usertime{
+    width:40px;
+    height:20px;
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+}
+.recent-comments .time-user span{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #7F4A88;
+    letter-spacing: 0;
+    margin-left: 11px;
+}
+.recent-comments .time-user .support-img{
+    margin-left: 35px;
+}
+.recent-comments .review-content{
+    padding:0 47px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+}
+/* 个人中心 */
+.bgimg{
+    width:100%;
+    height:229px;
+    background-image: url("../images/my/bg_center.png");
+    background-size: 100% 100%;
+    padding-top:69px;s
+}
+.bgimg .user_img{
+    width:91px;
+    height:91px;
+    margin: 0 auto;
+}
+.bgimg .user_img>img:first-child{
+    width:91px;
+    height:91px;
+}
+.bgimg .user_img>img:last-child{
+    width:31px;
+    height:31px;
+    position: relative;
+    top:-30px;
+    left: 60px;
+}
+.bgimg .information{
+    margin-top: 22px;
+}
+.bgimg .information>p{
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center
+}
+.bgimg .information>p>span{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.article{
+    width: 998px;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+.article .title{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-bottom: 17px;
+}
+.article hr{
+    opacity: 0.5;
+    color: #7F4A88;
+    margin-bottom: 17px;
+}
+
+.article .main{
+    width:998px;
+    height:241px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 1px solid #F0E9F1;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
+    border-radius: 2px; 
+    margin-bottom: 20px;
+}
+.article .main>.img{
+    width:396px;
+    height:241px;
+    display: inline-block;
+    float: left;
+}
+.article .main>.img>img{
+    width:396px;
+    height:241px;
+}
+.article .main>.container{
+    width:602px;
+    height:241px;
+    display: inline-block;
+    float: right;
+}
+.article .main>.container>.title{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-top: 35px;
+    margin-bottom: 14px;
+    margin-left: 36px;
+}
+.article .main>.container>.container-text{
+    width:527px;
+    height:72px;
+    margin-left: 36px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+.article .main>.container>.time-user{
+    margin-left: 36px;
+    line-height: 36px;
+}
+.article .main>.container>.time-user>.userimages{
+    width:36px;
+    height:36px;
+    margin-right: 11px;
+    float: left
+}
+.article .main>.container>.time-user>.username{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    margin-right: 31px;
+}
+.article .main>.container>.time-user>.usertime{
+    width:40px;
+    height:20px;
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+}
+.article .main>.container>.time-user>.support{
+    display: inline-block;
+    float: right;
+    margin-right: 39px;
+}
+.article .main>.container>.time-user>.support>span{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #7F4A88;
+    letter-spacing: 0;
+    margin-left: 11px;
+}
+.article .main>.container>.time-user>.support>img{
+    margin-left: 35px;
+}
+/* 写文章 */
+.write_article{
+    width:998px;
+    height:790px;
+    background: #FFFFFF;
+    border: 1px solid #F0E9F1;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 57px;
+}
+.write_article .write_article_images{
+    width:896px;
+    height:257px;
+    margin: 0 auto;
+    margin-top: 31px;
+    background-image: url("../images/list/1.png");
+    background-size: 100% 100%;
+}
+.write_article .write_article_images input{
+    width:896px;
+    height:41.8px;
+    opacity: 0.5;
+    background: #222629;
+    position: relative;
+    top:172.4px;
+    opacity: 0;
+    cursor:pointer;
+}
+.write_article .write_article_images p{
+    width:896px;
+    height:41.8px;
+    background: rgba(34,38,41,.5);
+    position: relative;
+    top:214.2px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 41.8px;
+    text-align: center;
+    
+}
+.write_article>.input_information>input{
+    margin-left: 52px;
+    margin-top: 25px;
+    border: none;
+    outline:none;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #6C6F71;
+    letter-spacing: 0;
+}
+.write_article>.input_information>input::-moz-placeholder{
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #6C6F71;
+    letter-spacing: 0;
+}
+.write_article>.input_information{
+    width:896px;
+    margin: 0 auto;
+}
+.write_article hr{
+    margin: 6px auto 19px auto;
+    border: .5px solid #BFA4C3;
+}
+.write_article>.input_information>textarea{
+    width:895px;
+    height:385px;
+    border: 1px solid rgba(127,74,136,0.5);
+    padding:8px 15px;
+    resize:none;
+    outline:none;
+}
+/* 写文章无图 */
+.write_article_images_none{
+    width:998px;
+    height:195px;
+    background: rgba(127,74,136,0.35);
+    padding-top:92px;
+}
+.write_article_images_none .upload{
+    width:55px;
+    height:55px;
+    margin:0 auto;
+}
+.write_article_images_none .upload input{
+    width:55px;
+    height:55px;
+    position: relative;
+    top:-55px;
+    opacity: 0;
+    cursor:pointer;
+}
+.write_article_images_none p{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+.write_article_images_none .upload2{
+    display: none;
+}
+.write_article_images_none .upload2>div{
+    width:100%;
+    height:41.8px;
+    margin-top: 153px;
+    background: rgba(34,38,41,0.5);
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 41.8px;   
+}
+.write_article_images_none .upload2>input{
+    width:100%;
+    height:41.8px;
+    position: relative;
+    top: -109px;
+    opacity: 0;
+    cursor:pointer;
+}
+.write_article_images_none .upload2>input{
+    width:100%;
+    height:41.8px;
+    margin-top: 67px;
+}
+/* 账户设置 */
+.setup_modify-text{
+    margin: 0 auto;
+    width:671px;
+    margin-top: 64px;
+}
+.setup_modify-text span{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #222629;
+    letter-spacing: 0;
+}
+.setup_modify-line{
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom:27px;
+    width:671px;
+    height:1px;
+    opacity: 0.7;
+    background-color: #7F4A88;
+}
+.setup_container{
+    width:671px;
+    height:350px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.05);
+    border-radius: 15px;
+    margin: 0 auto;   
+    padding-top: 39px; 
+}
+.setup_container li{
+    margin-left: 62px;
+}
+.setup_container li>span{
+    width:45px;
+    height:20px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    float:left;
+    margin-right: 17px;
+}
+.setup_container .head_portrait{
+    height:50px;
+}
+.setup_container .head_portrait span{
+    margin-top: 15px;
+}
+.setup_container .head_portrait .head_portrait_upload{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    background: url("../images/list/userimg.png");
+    background-size: 100% 100%;
+    border-radius: 50px;
+}
+.setup_container .head_portrait .head_portrait_upload p{
+    width:50px;
+    height:50px;
+    font-family: PingFangSC-Regular;
+    font-size: 10px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    background: rgba(0,0,0,0.35);
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+}
+.setup_container .head_portrait .head_portrait_upload input{
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+    position: relative;
+    top:-50px;
+    opacity: 0;
+}
+.setup_container .nickname{
+    margin-top: 18px;
+    margin-bottom: 19.5px;
+}
+.setup_container .nickname span{
+    margin-top: 6px;
+}
+.setup_container .nickname input{
+    width:220px;
+    height:36px;
+    border: 1px solid rgba(34,38,41,0.2);
+    border-radius: 4px;
+    padding-left:10px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #222629;
+    letter-spacing: 0;
+}
+
+.setup_container .gender{
+    margin-bottom: 21.8px;
+}
+.setup_container .gender input[type=radio]{  
+    display: inline-block;  
+    vertical-align: middle;  
+    width: 16x;  
+    height: 16px;   
+    -webkit-appearance: none;  
+    background-color: transparent;  
+    border: 0;  
+    outline: 0 !important;  
+    line-height: 16px;  
+    background: #FFFFFF;  
+    margin-right: 6px;
+}  
+.setup_container .gender input[type=radio]:after  {  
+    content: "";  
+    display:block;  
+    width: 16px;  
+    height: 16px;  
+    border-radius: 50%;  
+    text-align: center;  
+    line-height: 16px;  
+    font-size: 16px;  
+    color: #fff;  
+    border: 1px solid #C0CCDA;
+    background-color: #fff;  
+    box-sizing:border-box;  
+}  
+  
+ 
+
+  
+.setup_container .gender input[type=radio]:checked:after  {  
+    content: "";  
+    border:5px solid #7F4A88;  
+    background-color: #FFFFFF;;  
+}  
+.setup_container .gender label{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #1F2D3D;
+    letter-spacing: 0;
+    line-height: 14px;
+    margin-right: 30px;
+}
+.choice{
+    display: inline-block;
+    width:220;
+    height:36px;
+    background:rgba(255,255,255,.2);
+    border: 1px solid rgba(34,38,41,0.2);
+    border-radius: 4px;
+    margin-right: 40px;
+    margin-bottom: 21px;
+    
+}
+.choice span{
+    width:10px;
+    height:6px;
+    position: relative;
+    top:-22px;
+    left:200px;
+    
+}
+select{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 10px;
+
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    line-height: 14px;
+    border-radius: 3px;
+    
+}
+select option{
+    display: inline-block;
+    width:100%;
+    height:36px;
+}
+.setup_container .constellation>span{
+    margin-top: 8px;
+}
+.setup_container .city>span{
+    margin-top: 8px;
+}
+.setup_container .password>span{
+    margin-top: 8px;
+}
+.setup_container .password input{
+    width:220px;
+    height:36px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    line-height: 14px;
+    padding-left:10px;
+    border: 1px solid rgba(34,38,41,0.2);
+    border-radius: 4px;
+}
+.setup_container .password input::-moz-placeholder{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    line-height: 14px;
+}
+
+/* 三角 */
+.triangle{
+    position: relative;
+    top: -135px;
+    left: 59px;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+}
+
+

@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>悦读-修改密码</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            width:100%;
+            height:100%;
+            background-color: #fff;
+        }
+        header{
+            background-color: #7F4A88;
+            opacity: 1;
+            box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.20);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span>APIS</span>
+        <span></span>
+        <span>悦读项目</span>
+    </header>
+    <div class="modify-text">
+        <span>账户设置</span>
+        <span>/修改密码</span>
+    </div>
+    <div class="modify-line"></div>
+    <div class="center-line-modify">
+        <div class="back_pwd">修改密码</div>
+        <form action="">
+            <input type="text" name="phone_number" id="phone_number" placeholder="请输入手机号码"> <br>
+            <input type="text" name="verification_code" id="verification_code" placeholder="请输入短信验证码"><button type="button" id="get_code">获取验证码</button><br>
+            <input type="password" name="user_pwd1" id="user_pwd1" placeholder="输入新密码"><br>
+            <input type="password" name="user_pwd2" id="user_pwd2" placeholder="重复密码"><br>
+            <button type="submit" id="confirm">确认</button>
+        </form>
+    </div>
+    <script src="js/modify.js"></script>
+</body>
+</html>

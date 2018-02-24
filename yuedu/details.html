@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>悦读-文章详情</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            width:100%;
+            height:100%;
+        }
+        body{postion：absolute；left:0;right:0;bottom:0;top:0;}
+        header{
+            background-color: #7F4A88;
+            opacity: 1;
+            box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.20);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main-details">
+        <div class="main-1">
+            
+        </div>
+        <hr>
+        <!-- 文章点评 -->
+        <div class="comment">
+            <div class="comment-title">文章点评</div>
+            <textarea class="comment-container" placeholder="我有话要说......"></textarea>
+            <button class="submit-container" onclick="Publish()">提交</button>
+            <div class="clear"></div>
+        </div>
+        <!-- 最近评论 -->
+        <div class="recent-comments">
+            <div class="recent-comments-title">最近评论</div>
+            
+        </div>
+        
+    </div>
+    <script src="https://cdn.bootcss.com/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.5/lodash.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/details.js"></script>
+</body>
+</html>

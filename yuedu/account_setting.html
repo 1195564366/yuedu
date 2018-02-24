@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>悦读-账户设置</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            width:100%;
+            height:100%;
+            background-color: #fff;
+        }
+        header{
+            background-color: #7F4A88;
+            opacity: 1;
+            box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.20);
+        }
+        #tj{
+            border: none;
+            width:100px;
+            height:40px;
+            border-radius: 10px;
+            margin-left: 200px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="setup_modify-text">
+        <span>账户设置</span>
+    </div>
+    <div class="setup_modify-line"></div>
+    <!-- 设置内容 -->
+    <form enctype="multipart/form-data">
+            <div class="setup_container" style="height:465px;">
+                    <ul>
+                        <li class="head_portrait">
+                            <span>头像：</span>
+                            <div class="head_portrait_upload">
+                                <p>
+                                    上传头像
+                                </p>
+                                <input type="file" id="img_bg">
+                            </div>
+                        </li>
+                        <li class="nickname">
+                            <span>昵称：</span>
+                            <input type="text" value="吕璐璐璐" id="name">
+                        </li>
+                        <li class="gender">
+                            <span>性别</span>
+                            <input type="radio" name="radio" value="man">
+                            <label for="">男</label>
+                            <input type="radio" name="radio" value="woman">
+                            <label for="">女</label>
+                        </li>
+                        <li class="constellation">
+                            <span>星座：</span>
+                            <div class="choice">
+                                <select name="" >
+                                </select>
+                                <span>
+                                    <img src="images/account_setting/icon_arrow_down.png" alt="">
+                                </span>
+                            </div>
+                        </li>
+                        <li class="city">
+                            <span>城市：</span>
+                            <div class="choice">
+                                    <select id="province">
+                                    </select>
+                                    <span>
+                                        <img src="images/account_setting/icon_arrow_down.png" alt="">
+                                    </span>
+                            </div>
+                        </li>
+                        <li class="password">
+                            <span>密码:</span>
+                            <input type="password" name=""  placeholder="请输入修改密码">
+                        </li>
+                    </ul>  
+                    <button type="button" id="tj">提交</button>
+                </div>         
+    </form>
+    <script src="js/common.js"></script>
+    <script src="js/account-setting.js"></script>
+</body>
+</html>
