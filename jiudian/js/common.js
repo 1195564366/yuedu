@@ -18,26 +18,26 @@ function header(){  //动态页面顶部
                 <ul> 
                     <div class="triangle"></div>
                     <li>
-                        <a href="">
+                        <a href="my_order.html">
                             <img src="images/icon_my.png" alt="">
                             我的订单
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="account_settings.html">
                             <img src="images/icon_setting.png" alt="">
                             账户设置
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a onclick="localStorage_clear()"  href="login.html">
                             <img src="images/icon_out.png" alt="">
                             退出登陆
                         </a>
                     </li>
                 </ul>
             </div>
-            <a href="" class="order_form">我的订单</a>
+            <a href="my_order.html" class="order_form">我的订单</a>
         </div>
     </header>
     `
@@ -58,9 +58,14 @@ function user_switch(){     //判断用户是否登陆导航栏显示用户信�
     if( localStorage.token != undefined && localStorage.token != ""){
         $(".login_and_register").css("display","none");
         $(".login_information").css("display","inline-block");
+        $("header .user_name").html( localStorage.name );
+        $("header .user_name").attr( "title",localStorage.name );
+        $("header .user_head_img").attr( "src",url_img + localStorage.avatar );
     }
 }
-
+function localStorage_clear(){
+    localStorage.clear(); 
+}
 $(document).ready(function(){
     header();
     footer();

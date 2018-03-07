@@ -287,12 +287,10 @@ header{
     margin-top: 32px;
     width: 81px;
     height: 36px;
-    line-height: 36px;
     background: #5944C3;
     border-radius: 2px;
     border: none;
     outline: transparent;
-
     font-family: AppleSystemUIFont;
     font-size: 14px;
     color: #FFFFFF;

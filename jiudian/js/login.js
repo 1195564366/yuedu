@@ -275,6 +275,7 @@ $(document).ready(function(){
 
 $(".account_login input").keyup(function(){ //判断短信快捷登陆 登陆按钮是否启用
     account_login_judge();
+    $(".prompt").remove();
 })
 function account_login_judge(){ //判断账号登陆 登陆按钮是否启用
     var judge = 1;  //判断开关
